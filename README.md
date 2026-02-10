@@ -1,4 +1,3 @@
-
 # 📸 Image Upload Application
 
 A full-stack image upload application where users can upload **single or multiple images**, store them securely in **Cloudinary**, save image URLs in **MongoDB**, and view uploaded images from the database.
@@ -38,15 +37,18 @@ A full-stack image upload application where users can upload **single or multipl
 ---
 
 ## 📂 Project Structure
+
 MERN Stack Image Upload/
 │
 ├── client/
 ├── server/
 ├── screenshots/
-│   ├── upload.png
-│   ├── preview.png
-│   └── gallery.png
+│   ├── photo-admin.PNG
+│   └── all-photo.PNG
 └── README.md
+
+
+
 
 ## 🖼 Screenshots
 
