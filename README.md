@@ -35,10 +35,7 @@ A full-stack image upload application where users can upload **single or multipl
 - Mongoose
 
 ---
-
  
-
----
 
 ## 🖼 Screenshots
 
