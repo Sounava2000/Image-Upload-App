@@ -37,10 +37,18 @@ A full-stack image upload application where users can upload **single or multipl
 ---
 
 ## 📂 Project Structure
- 
+
+MERN Stack Image Upload/
+│
+├── client/
+├── server/
+├── screenshots/
+│ ├── photo-admin.PNG
+│ └── all-photo.PNG
+└── README.md
 
 
-
+---
 
 ## 🖼 Screenshots
 
@@ -49,5 +57,3 @@ A full-stack image upload application where users can upload **single or multipl
 
 ### Image Preview Before Upload
 ![Preview](./screenshots/all-photo.PNG)
-
-
