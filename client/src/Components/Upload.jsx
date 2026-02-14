@@ -31,7 +31,7 @@ export const Upload = () => {
     try {
       setLoading(true);
 
-      const res = await fetch(`${backendUrl}/img-upload`, {
+      const res = await fetch(`${backendUrl}/v1/img-upload`, {
         method: "POST",
         body: formData,
       });
@@ -49,7 +49,7 @@ export const Upload = () => {
   };
   const handleGet = async () => {
     try {
-      const res = await fetch(`${backendUrl}/get-img`, {
+      const res = await fetch(`${backendUrl}/v1/get-img`, {
         method: "GET",
       });
 
