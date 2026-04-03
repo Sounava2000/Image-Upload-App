@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/v1",userRouter)
   app.use(ErrorMiddleware)
- 
+ console.log("first")
 dbConnect()
   .then(() => {
     app.listen(PORT, () => {
