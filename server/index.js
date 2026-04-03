@@ -15,7 +15,6 @@ app.use(express.json());
 app.use("/v1",userRouter)
   app.use(ErrorMiddleware)
  
- 
 dbConnect()
   .then(() => {
     app.listen(PORT, () => {
