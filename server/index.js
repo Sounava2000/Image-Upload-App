@@ -3,7 +3,8 @@ import dotenv from "dotenv";
 import cors from "cors"; 
 import { dbConnect } from "./config/dbConnect.js";
 import { ErrorMiddleware } from "./middlewares/error.js";
-import userRouter from './routes/userRoutes.js'
+import userRouter from './routes/userRoutes.js' 
+ 
 dotenv.config();
 
 const app = express();
@@ -13,7 +14,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/v1",userRouter)
   app.use(ErrorMiddleware)
-
+ 
  
 dbConnect()
   .then(() => {
