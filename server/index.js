@@ -14,8 +14,8 @@ app.use(cors());
 app.use(express.json());
 app.use("/v1",userRouter)
   app.use(ErrorMiddleware)
- console.log("first")
 dbConnect()
+console.log("first")
   .then(() => {
     app.listen(PORT, () => {
       console.log(`Server running on port ${PORT} 🔥`);
