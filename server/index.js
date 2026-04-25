@@ -16,6 +16,8 @@ app.use("/v1",userRouter)
   app.use(ErrorMiddleware)
 dbConnect()
 console.log("first")
+console.log("firstssssssssssssssssssssssssssssssssss")
+
   .then(() => {
     app.listen(PORT, () => {
       console.log(`Server running on port ${PORT} 🔥`);
