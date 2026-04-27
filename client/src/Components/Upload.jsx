@@ -10,6 +10,7 @@ export const Upload = () => {
 
   const [loading, setLoading] = useState(false);
   const backendUrl = import.meta.env.VITE_URL;
+   
   const handleFileChange = (e) => {
     console.log(e.target.files)
     const selectedFiles = Array.from(e.target.files);
@@ -42,6 +43,7 @@ export const Upload = () => {
       toast.success("Upload success");
       setFiles([]);
     } catch (error) {
+      console.log(error)
       toast.error("Upload failed");
     } finally {
       setLoading(false);
@@ -55,6 +57,7 @@ export const Upload = () => {
 
       const data = await res.json();
       setDbImages(data.images);
+      console.log(data)
  if (data.images.length===0) {
       toast.error("No data is present");
         return

@@ -4,7 +4,7 @@ import cloudinary from "../config/cloudnary.js";
 import { User } from "../models/userModal.js";
 
 export const userService = async (req, res, next) => {
-  try {
+   
     const files = req.files;
 
     if (!files || files.length === 0) {
@@ -12,9 +12,7 @@ export const userService = async (req, res, next) => {
         success: false,
         message: "No file uploaded",
       });
-    }
-
-    // 🔹 Single file
+    } 
     if (files.length === 1) {
       const file = files[0];
 
@@ -40,8 +38,7 @@ export const userService = async (req, res, next) => {
         message: "Single file uploaded",
       });
     }
-
-    // 🔹 Multiple files
+ 
     const uploadedResults = [];
 
     for (let i = 0; i < files.length; i++) {
@@ -71,7 +68,5 @@ export const userService = async (req, res, next) => {
       result: uploadedResults,
       message: "Multiple files uploaded",
     });
-  } catch (error) {
-    next(error);
-  }
+  
 };
