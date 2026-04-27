@@ -13,8 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(express.json());
 app.use("/v1",userRouter)
-  app.use(ErrorMiddleware)
-  console.log("awsfkjfbsaibvjkb")
+  app.use(ErrorMiddleware) 
 dbConnect()
 
   .then(() => {
